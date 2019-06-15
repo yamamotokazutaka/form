@@ -1,0 +1,12 @@
+<%=form_tag("/forms/create")do%>
+  名前：<input name="name">
+  <br>
+  年齢：<input name="age">
+  <br>
+  体調：<input name="condition">
+  <br>
+  備考：<input name="other">
+  <br>
+  <input type="submit",value="送信">
+<%end%>
+<%=link_to("名前一覧に戻る","/")%>

@@ -1,0 +1,14 @@
+<%=form_tag("/forms/#{@person.id}/update")do%>
+  名前：<input name="name" value="<%=@person.name%>">
+  <br>
+  年齢：<input name="age" value="<%=@person.age%>">
+  <br>
+  体調：<input name="condition" value="<%=@person.condition%>">
+  <br>
+  備考：<input name="other" value="<%=@person.other%>">
+  <br>
+  <input type="submit",value="送信">
+  <br>
+  <br>
+  <%=link_to("変更せずに戻る","/forms/#{@person.id}")%>
+<%end%>

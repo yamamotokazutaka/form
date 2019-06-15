@@ -1,0 +1,6 @@
+<%@people.each do |person|%>
+<%=link_to("#{person.name}","/forms/#{person.id}")%>
+<%end%>
+<br>
+<br>
+<%=link_to("入力画面へ","/forms/new")%>

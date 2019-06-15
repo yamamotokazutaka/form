@@ -1,0 +1,13 @@
+名前：<%=@person.name%>
+<br>
+年齢：<%=@person.age%>
+<br>
+体調：<%=@person.condition%>
+<br>
+備考：<%=@person.other%>
+<br>
+<%=link_to("編集","/forms/#{@person.id}/edit")%>
+<%=link_to("削除","/forms/#{@person.id}/destroy", {method:"post"})%>
+<br>
+<br>
+<%=link_to("名前一覧に戻る","/")%>
